@@ -1,0 +1,11 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="drzewo::usun",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="drzewo::znajdz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdrzewo.html#adefbcd8f2af76e2009d4d8970e3388da",tooltip="funkcja znajduje w drzewie element o podanym kluczu"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="drzewo::znajdz_nastepnik",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdrzewo.html#a99dbf187b41e0d9f497bf7dadbf00f83"];
+}

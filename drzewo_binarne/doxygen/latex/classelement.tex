@@ -1,0 +1,151 @@
+\section{\-Dokumentacja klasy element}
+\label{classelement}\index{element@{element}}
+
+
+clasa służy do przechowywania zestawu danych tworzacych jeden element w drzewie  
+
+
+
+
+{\ttfamily \#include $<$clasa.\-hh$>$}
+
+
+
+\-Diagram współpracy dla element\-:
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+{\bf element} ()
+\begin{DoxyCompactList}\small\item\em konstruktor klasy, zeruje wszystkie adresy klasy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+{\bf element} $\ast$ {\bf wyzej}
+\item 
+{\bf element} $\ast$ {\bf lewy}
+\item 
+{\bf element} $\ast$ {\bf prawy}
+\item 
+string {\bf wartosc}
+\item 
+int {\bf klucz}
+\end{DoxyCompactItemize}
+\subsection*{\-Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& {\bf operator$<$$<$} (ostream \&wyjscie, {\bf element} \&dana)
+\begin{DoxyCompactList}\small\item\em przeladowanie operatora wyjscia \end{DoxyCompactList}\item 
+istream \& {\bf operator$>$$>$} (istream \&wejscie, {\bf element} \&dana)
+\begin{DoxyCompactList}\small\item\em przeladowanie operatora wejscia \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+zawiera również przeładowania operatorów, potrzebne do pracy z elementem. 
+
+\-Definicja w linii 19 pliku clasa.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\index{element@{element}!element@{element}}
+\index{element@{element}!element@{element}}
+\subsubsection[{element}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element\-::element} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classelement_ab855762fbfbeb7307a78943b10c3afbb}
+
+
+\-Definicja w linii 11 pliku clasa.\-cpp.
+
+
+
+\subsection{\-Dokumentacja przyjaciół i funkcji związanych}
+\index{element@{element}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!element@{element}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{wyjscie, }
+\item[{{\bf element} \&}]{dana}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [friend]}}\label{classelement_afeccea9f09b5a60428a16d1e50cdd295}
+pozwala na wypisywanie danych z elementu do strumienia wyjscia 
+\begin{DoxyParams}{\-Parametry}
+{\em wyjscie} & strumien wyjscia \\
+\hline
+{\em dana} & elemnt ktory mazostac wysany \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Zwraca}
+
+\end{DoxyReturn}
+
+
+\-Definicja w linii 36 pliku clasa.\-hh.
+
+\index{element@{element}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!element@{element}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{wejscie, }
+\item[{{\bf element} \&}]{dana}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [friend]}}\label{classelement_a923677d42ef9fc0742a4c1002aa423ae}
+obsluguje wpisywanie zmiennych do elementu 
+\begin{DoxyParams}{\-Parametry}
+{\em wejscie} & strumien wejsciowy \\
+\hline
+{\em dana} & element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Zwraca}
+
+\end{DoxyReturn}
+
+
+\-Definicja w linii 54 pliku clasa.\-hh.
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\index{element@{element}!klucz@{klucz}}
+\index{klucz@{klucz}!element@{element}}
+\subsubsection[{klucz}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf element\-::klucz}}\label{classelement_a112279ccab2f4e22485125be5bda7b75}
+
+
+\-Definicja w linii 28 pliku clasa.\-hh.
+
+\index{element@{element}!lewy@{lewy}}
+\index{lewy@{lewy}!element@{element}}
+\subsubsection[{lewy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element}$\ast$ {\bf element\-::lewy}}\label{classelement_a2ded40c10cfc416d01e5ffda377c6706}
+
+
+\-Definicja w linii 23 pliku clasa.\-hh.
+
+\index{element@{element}!prawy@{prawy}}
+\index{prawy@{prawy}!element@{element}}
+\subsubsection[{prawy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element}$\ast$ {\bf element\-::prawy}}\label{classelement_a98f9661f193070ccd39dd5989e5635a4}
+
+
+\-Definicja w linii 24 pliku clasa.\-hh.
+
+\index{element@{element}!wartosc@{wartosc}}
+\index{wartosc@{wartosc}!element@{element}}
+\subsubsection[{wartosc}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf element\-::wartosc}}\label{classelement_ae33073625c349adb76caf9b5e0df0134}
+
+
+\-Definicja w linii 26 pliku clasa.\-hh.
+
+\index{element@{element}!wyzej@{wyzej}}
+\index{wyzej@{wyzej}!element@{element}}
+\subsubsection[{wyzej}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element}$\ast$ {\bf element\-::wyzej}}\label{classelement_a57da302fce7645e1c23073911ae1f522}
+
+
+\-Definicja w linii 22 pliku clasa.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+{\bf clasa.\-hh}\item 
+{\bf clasa.\-cpp}\end{DoxyCompactItemize}

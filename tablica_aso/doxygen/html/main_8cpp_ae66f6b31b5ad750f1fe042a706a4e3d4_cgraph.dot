@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tablica::dodaj",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtablica.html#a6031c327eb96623dbbd91516db085bc7",tooltip="funkcja dodaje element do tablicy, lub zmienia wartosc juz istniejacego elementu"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tablica::wyswietl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtablica.html#ac7d804812a4ba07e4c93adc8d7bcdce6",tooltip="funkcja wyswietla element o zadanym kluczu"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="tablica::usun",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtablica.html#a8730ad832ad0ae38e80b37f6320be2b1",tooltip="funkcja usuwa element o zadanym kluczu"];
+}

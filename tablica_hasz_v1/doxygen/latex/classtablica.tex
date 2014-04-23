@@ -1,0 +1,214 @@
+\section{\-Dokumentacja klasy tablica}
+\label{classtablica}\index{tablica@{tablica}}
+
+
+{\ttfamily \#include $<$tablica.\-hh$>$}
+
+
+
+\-Diagram współpracy dla tablica\-:
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+{\bf tablica} (int il)
+\item 
+void {\bf dodaj} ({\bf element} nowy)
+\begin{DoxyCompactList}\small\item\em funkcja dodaje przekazany element do tablicy \end{DoxyCompactList}\item 
+{\bf element} $\ast$ {\bf znajdz} (string klucz)
+\begin{DoxyCompactList}\small\item\em funkcja znajduje element o zadanym kluczu \end{DoxyCompactList}\item 
+int {\bf haszuj} (string klucz)
+\begin{DoxyCompactList}\small\item\em funkcja przetwarza klucz elementu na nr indeksu w tablicy \end{DoxyCompactList}\item 
+void {\bf haszuj} ({\bf element} \&nowy)
+\begin{DoxyCompactList}\small\item\em funkcja przetwarza klucz elementu na nr indeksu w tablicy \end{DoxyCompactList}\item 
+void {\bf usun\-\_\-element} (string klucz)
+\begin{DoxyCompactList}\small\item\em funkcja usuwa element o podanym kluczu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+{\bf element} $\ast$ {\bf poczatek}
+\item 
+int {\bf rozmiar}
+\item 
+int {\bf ilosc}
+\end{DoxyCompactItemize}
+\subsection*{\-Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf element}
+\item 
+ostream \& {\bf operator$<$$<$} (ostream \&wejscie, {\bf tablica} \&tab)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 14 pliku tablica.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\index{tablica@{tablica}!tablica@{tablica}}
+\index{tablica@{tablica}!tablica@{tablica}}
+\subsubsection[{tablica}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tablica\-::tablica} (
+\begin{DoxyParamCaption}
+\item[{int}]{il}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [inline]}}\label{classtablica_ada094314576d376f581f169eb9350698}
+
+
+\-Definicja w linii 21 pliku tablica.\-hh.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\index{tablica@{tablica}!dodaj@{dodaj}}
+\index{dodaj@{dodaj}!tablica@{tablica}}
+\subsubsection[{dodaj}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf tablica\-::dodaj} (
+\begin{DoxyParamCaption}
+\item[{{\bf element}}]{nowy}
+\end{DoxyParamCaption}
+)}\label{classtablica_a174193f8c8df98ed978a83e62732f249}
+
+\begin{DoxyParams}{\-Parametry}
+{\em nowy} & element ktory ma zostać dodany \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 38 pliku tablica.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\index{tablica@{tablica}!haszuj@{haszuj}}
+\index{haszuj@{haszuj}!tablica@{tablica}}
+\subsubsection[{haszuj}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tablica\-::haszuj} (
+\begin{DoxyParamCaption}
+\item[{string}]{klucz}
+\end{DoxyParamCaption}
+)}\label{classtablica_a00673bf5554a4e7d8ce138bbb3b551ec}
+funkcja wymnaza kod \-A\-S\-C\-I\-I znaku razy pozycje na ktorj znak sie znajduje w stringu 
+\begin{DoxyParams}{\-Parametry}
+{\em klucz} & ktory ma zostac przetworzony; \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 91 pliku tablica.\-cpp.
+
+\index{tablica@{tablica}!haszuj@{haszuj}}
+\index{haszuj@{haszuj}!tablica@{tablica}}
+\subsubsection[{haszuj}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf tablica\-::haszuj} (
+\begin{DoxyParamCaption}
+\item[{{\bf element} \&}]{nowy}
+\end{DoxyParamCaption}
+)}\label{classtablica_aba0c7914bf7f4935dff1216c7808dc5d}
+funkcja wymnaza kod \-A\-S\-C\-I\-I znaku razy pozycje na ktorj znak sie znajduje w stringu 
+\begin{DoxyParams}{\-Parametry}
+{\em nowy} & element ktorego klucz ma zostac przetworzony; \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 77 pliku tablica.\-cpp.
+
+\index{tablica@{tablica}!usun\-\_\-element@{usun\-\_\-element}}
+\index{usun\-\_\-element@{usun\-\_\-element}!tablica@{tablica}}
+\subsubsection[{usun\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf tablica\-::usun\-\_\-element} (
+\begin{DoxyParamCaption}
+\item[{string}]{klucz}
+\end{DoxyParamCaption}
+)}\label{classtablica_a7988edfccea999edb4ae9fcfd17b3b36}
+
+\begin{DoxyParams}{\-Parametry}
+{\em klucz} & elementu ktory ma zostac usuniety; \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 128 pliku tablica.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\index{tablica@{tablica}!znajdz@{znajdz}}
+\index{znajdz@{znajdz}!tablica@{tablica}}
+\subsubsection[{znajdz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element} $\ast$ {\bf tablica\-::znajdz} (
+\begin{DoxyParamCaption}
+\item[{string}]{klucz}
+\end{DoxyParamCaption}
+)}\label{classtablica_a015cd823648a0a950947cfd64db55a0f}
+
+\begin{DoxyParams}{\-Parametry}
+{\em klucz} & do ktorego pasujacy element ma byc znaleziony \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Zwraca}
+zwraca wskaznik na szukany element 
+\end{DoxyReturn}
+
+
+\-Definicja w linii 107 pliku tablica.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+
+
+\subsection{\-Dokumentacja przyjaciół i funkcji związanych}
+\index{tablica@{tablica}!element@{element}}
+\index{element@{element}!tablica@{tablica}}
+\subsubsection[{element}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf element}\hspace{0.3cm}{\ttfamily  [friend]}}\label{classtablica_a0602f94f596fa800408eeb034b5850ab}
+
+
+\-Definicja w linii 28 pliku tablica.\-hh.
+
+\index{tablica@{tablica}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!tablica@{tablica}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{wejscie, }
+\item[{{\bf tablica} \&}]{tab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [friend]}}\label{classtablica_a9d69ec8505d002664b6b74e9b4d68662}
+
+
+\-Definicja w linii 14 pliku tablica.\-cpp.
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\index{tablica@{tablica}!ilosc@{ilosc}}
+\index{ilosc@{ilosc}!tablica@{tablica}}
+\subsubsection[{ilosc}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tablica\-::ilosc}\hspace{0.3cm}{\ttfamily  [private]}}\label{classtablica_af78b1ba93fce972d87e7ce98ae93c8cc}
+
+
+\-Definicja w linii 19 pliku tablica.\-hh.
+
+\index{tablica@{tablica}!poczatek@{poczatek}}
+\index{poczatek@{poczatek}!tablica@{tablica}}
+\subsubsection[{poczatek}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element}$\ast$ {\bf tablica\-::poczatek}\hspace{0.3cm}{\ttfamily  [private]}}\label{classtablica_a22f5e1c25606a4d81c698722f242ed4a}
+
+
+\-Definicja w linii 17 pliku tablica.\-hh.
+
+\index{tablica@{tablica}!rozmiar@{rozmiar}}
+\index{rozmiar@{rozmiar}!tablica@{tablica}}
+\subsubsection[{rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tablica\-::rozmiar}\hspace{0.3cm}{\ttfamily  [private]}}\label{classtablica_a89cfeb12af90d90705924597f6286b2e}
+
+
+\-Definicja w linii 18 pliku tablica.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+prj/{\bf tablica.\-hh}\item 
+prj/{\bf tablica.\-cpp}\end{DoxyCompactItemize}

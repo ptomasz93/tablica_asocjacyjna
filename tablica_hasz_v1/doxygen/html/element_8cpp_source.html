@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>tablica_haszujaca: Plik źródłowy prj/element.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">tablica_haszujaca
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('element_8cpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">element.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="element_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment"> * element.cpp</span>
+<a name="l00003"></a>00003 <span class="comment"> *</span>
+<a name="l00004"></a>00004 <span class="comment"> *  Created on: 20-04-2014</span>
+<a name="l00005"></a>00005 <span class="comment"> *      Author: tomek</span>
+<a name="l00006"></a>00006 <span class="comment"> */</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="element_8hh.html">element.hh</a>&quot;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="keyword">using namespace </span>std;
+<a name="l00013"></a>00013 
+<a name="l00014"></a><a class="code" href="element_8cpp.html#a374db857ee8d433ffa837ba21af670df">00014</a> ostream &amp; <a class="code" href="element_8cpp.html#a374db857ee8d433ffa837ba21af670df">operator &lt;&lt;</a>(ostream &amp; wyjsciowe, <a class="code" href="classelement.html">element</a> &amp; wysylany)
+<a name="l00015"></a>00015 {
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017                         wyjsciowe&lt;&lt;<span class="stringliteral">&quot;klucz : &quot;</span>&lt;&lt;wysylany.<a class="code" href="classelement.html#ae428dec26f3fcde9f8990b904a144e37">klucz</a>&lt;&lt;endl;
+<a name="l00018"></a>00018                         wyjsciowe&lt;&lt;<span class="stringliteral">&quot;wartosc :&quot;</span>&lt;&lt;wysylany.<a class="code" href="classelement.html#ae33073625c349adb76caf9b5e0df0134">wartosc</a>&lt;&lt;endl;
+<a name="l00019"></a>00019                         wyjsciowe&lt;&lt;<span class="stringliteral">&quot;indeks :&quot;</span>&lt;&lt;wysylany.<a class="code" href="classelement.html#a0f38e724925a63611881cd67947d7878">indeks</a>&lt;&lt;endl;
+<a name="l00020"></a>00020                         <span class="keywordflow">return</span> wyjsciowe;
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 }
+<a name="l00023"></a>00023 
+<a name="l00024"></a><a class="code" href="element_8cpp.html#a8be72918ea09f8db5ff358c92daa8b60">00024</a> istream &amp; <a class="code" href="element_8cpp.html#a8be72918ea09f8db5ff358c92daa8b60">operator &gt;&gt;</a>(istream &amp;wejscie, <a class="code" href="classelement.html">element</a> &amp;wpisywany)
+<a name="l00025"></a>00025 {
+<a name="l00026"></a>00026         <span class="keywordtype">string</span> klucz=<a class="code" href="generator_8cpp.html#a8d9d16c63ca77c9c1eb85a28d3166432" title="generuje plik *.txt o zadanej ilosci danych i nazwie">generuj</a>();
+<a name="l00027"></a>00027         <span class="comment">//cout&lt;&lt;&quot;podaj klucz:&quot;;</span>
+<a name="l00028"></a>00028         <span class="comment">//wejscie&gt;&gt;wpisywany.klucz;</span>
+<a name="l00029"></a>00029         wpisywany.<a class="code" href="classelement.html#ae428dec26f3fcde9f8990b904a144e37">klucz</a>=klucz;
+<a name="l00030"></a>00030         <span class="comment">//cout&lt;&lt;&quot;podaj wartosc:&quot;;</span>
+<a name="l00031"></a>00031         <span class="comment">//wejscie&gt;&gt;wpisywany.wartosc;</span>
+<a name="l00032"></a>00032         wpisywany.<a class="code" href="classelement.html#ae33073625c349adb76caf9b5e0df0134">wartosc</a>=klucz;
+<a name="l00033"></a>00033         <span class="keywordflow">return</span> wejscie;
+<a name="l00034"></a>00034 }
+<a name="l00035"></a>00035 
+<a name="l00039"></a><a class="code" href="classelement.html#a51895177f9783b3293f5027c0d307e13">00039</a> <span class="keywordtype">void</span> <a class="code" href="classelement.html#a51895177f9783b3293f5027c0d307e13" title="zeruje wartosci elementu">element::czysc</a>()
+<a name="l00040"></a>00040 {
+<a name="l00041"></a>00041         klucz.clear();
+<a name="l00042"></a>00042         wartosc.clear();
+<a name="l00043"></a>00043         zajety=<span class="keyword">false</span>;
+<a name="l00044"></a>00044         nastepny==NULL;
+<a name="l00045"></a>00045 }
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="element_8cpp.html">element.cpp</a>      </li>
+
+    <li class="footer">Wygenerowano Wed Apr 23 2014 22:41:14 dla tablica_haszujaca programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

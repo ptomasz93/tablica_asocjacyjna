@@ -1,0 +1,8 @@
+set terminal png
+set output 'czas_dzialania_algorytmow.png'
+set title "czas obslugi tablicy asocjacyjnej zaimplementowanej na roznych strukturach"
+set xlabel "il. danych [mln]"
+set ylabel "czas [s]"
+set grid
+plot 'drzewo.txt' using 1 : 2 smooth bezier, 'haszujaca.txt' using 1 : 2 smooth bezier, 'tablica.txt' using 1 : 2 smooth bezier
+unset output

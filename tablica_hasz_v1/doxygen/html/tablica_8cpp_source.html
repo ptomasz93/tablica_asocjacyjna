@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>tablica_haszujaca: Plik źródłowy prj/tablica.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">tablica_haszujaca
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('tablica_8cpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">tablica.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tablica_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment"> * tablica.cpp</span>
+<a name="l00003"></a>00003 <span class="comment"> *</span>
+<a name="l00004"></a>00004 <span class="comment"> *  Created on: 20-04-2014</span>
+<a name="l00005"></a>00005 <span class="comment"> *      Author: tomek</span>
+<a name="l00006"></a>00006 <span class="comment"> */</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="tablica_8hh.html">tablica.hh</a>&quot;</span>
+<a name="l00009"></a>00009 <span class="keyword">using namespace </span>std;
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 
+<a name="l00014"></a><a class="code" href="tablica_8cpp.html#acdda4767b793737f2b14b45994a5989f">00014</a> ostream &amp; <a class="code" href="element_8cpp.html#a374db857ee8d433ffa837ba21af670df">operator &lt;&lt; </a>(ostream &amp; wyjscie, <a class="code" href="classtablica.html">tablica</a> &amp; tab)
+<a name="l00015"></a>00015         {
+<a name="l00016"></a>00016                 <span class="keywordtype">int</span> i=0;
+<a name="l00017"></a>00017                 <a class="code" href="classelement.html">element</a> pomocniczy;
+<a name="l00018"></a>00018                 wyjscie&lt;&lt;<span class="stringliteral">&quot;rozmiar tablicy :&quot;</span>&lt;&lt;tab.<a class="code" href="classtablica.html#a89cfeb12af90d90705924597f6286b2e">rozmiar</a>&lt;&lt;endl;
+<a name="l00019"></a>00019                 wyjscie&lt;&lt;<span class="stringliteral">&quot;ilosc elementow :&quot;</span>&lt;&lt;tab.<a class="code" href="classtablica.html#af78b1ba93fce972d87e7ce98ae93c8cc">ilosc</a>&lt;&lt;endl;
+<a name="l00020"></a>00020                 <span class="keywordflow">for</span>(i=0 ; i&lt;tab.<a class="code" href="classtablica.html#a89cfeb12af90d90705924597f6286b2e">rozmiar</a> ; i++)
+<a name="l00021"></a>00021                 {
+<a name="l00022"></a>00022                         pomocniczy=tab.<a class="code" href="classtablica.html#a22f5e1c25606a4d81c698722f242ed4a">poczatek</a>[i];
+<a name="l00023"></a>00023                         <span class="keywordflow">if</span>(pomocniczy.<a class="code" href="classelement.html#ae428dec26f3fcde9f8990b904a144e37">klucz</a>.size()!=0)
+<a name="l00024"></a>00024                         {
+<a name="l00025"></a>00025                         wyjscie&lt;&lt;pomocniczy;
+<a name="l00026"></a>00026                         <span class="keywordflow">while</span>(pomocniczy.nastepny!=NULL)
+<a name="l00027"></a>00027                         {
+<a name="l00028"></a>00028                                 pomocniczy=*pomocniczy.<a class="code" href="classelement.html#ab6df52b0e5cfa7c4998a2ab74a8ef53e">nastepny</a>;
+<a name="l00029"></a>00029                                 wyjscie&lt;&lt;pomocniczy;
+<a name="l00030"></a>00030                         }
+<a name="l00031"></a>00031                         }
+<a name="l00032"></a>00032                 }
+<a name="l00033"></a>00033         }
+<a name="l00038"></a><a class="code" href="classtablica.html#a174193f8c8df98ed978a83e62732f249">00038</a> <span class="keywordtype">void</span> <a class="code" href="classtablica.html#a174193f8c8df98ed978a83e62732f249" title="funkcja dodaje przekazany element do tablicy">tablica::dodaj</a>(<a class="code" href="classelement.html">element</a>  nowy)
+<a name="l00039"></a>00039 {
+<a name="l00040"></a>00040         haszuj(nowy);
+<a name="l00041"></a>00041         <span class="keywordflow">if</span>(poczatek[nowy.<a class="code" href="classelement.html#a0f38e724925a63611881cd67947d7878">indeks</a>].zajety==NULL)
+<a name="l00042"></a>00042         {
+<a name="l00043"></a>00043                 poczatek[nowy.<a class="code" href="classelement.html#a0f38e724925a63611881cd67947d7878">indeks</a>]=nowy;
+<a name="l00044"></a>00044                 poczatek[nowy.<a class="code" href="classelement.html#a0f38e724925a63611881cd67947d7878">indeks</a>].<a class="code" href="classelement.html#ab8931aa65d177c803287d93e49b14db9">zajety</a>=<span class="keyword">true</span>;
+<a name="l00045"></a>00045         }
+<a name="l00046"></a>00046         <span class="keywordflow">else</span> <span class="keywordflow">if</span>(poczatek[nowy.<a class="code" href="classelement.html#a0f38e724925a63611881cd67947d7878">indeks</a>].zajety==<span class="keyword">true</span>)
+<a name="l00047"></a>00047         {
+<a name="l00048"></a>00048                 <a class="code" href="classelement.html">element</a> *nastepny=<span class="keyword">new</span> <a class="code" href="classelement.html">element</a>;
+<a name="l00049"></a>00049                 *nastepny=nowy;
+<a name="l00050"></a>00050                 <a class="code" href="classelement.html">element</a>* pomocniczy=&amp;poczatek[nowy.<a class="code" href="classelement.html#a0f38e724925a63611881cd67947d7878">indeks</a>];
+<a name="l00051"></a>00051                 <span class="keywordflow">while</span>(pomocniczy-&gt;<a class="code" href="classelement.html#ab8931aa65d177c803287d93e49b14db9">zajety</a>==<span class="keyword">true</span>)
+<a name="l00052"></a>00052                 {
+<a name="l00053"></a>00053                         <span class="keywordflow">if</span>(pomocniczy-&gt;<a class="code" href="classelement.html#ae428dec26f3fcde9f8990b904a144e37">klucz</a>==nowy.<a class="code" href="classelement.html#ae428dec26f3fcde9f8990b904a144e37">klucz</a>)
+<a name="l00054"></a>00054                         {
+<a name="l00055"></a>00055                                 pomocniczy-&gt;<a class="code" href="classelement.html#ae33073625c349adb76caf9b5e0df0134">wartosc</a>=nowy.<a class="code" href="classelement.html#ae33073625c349adb76caf9b5e0df0134">wartosc</a>;
+<a name="l00056"></a>00056                                 <span class="keywordflow">return</span>;
+<a name="l00057"></a>00057                         }
+<a name="l00058"></a>00058                         <span class="keywordflow">if</span>(pomocniczy-&gt;<a class="code" href="classelement.html#ab6df52b0e5cfa7c4998a2ab74a8ef53e">nastepny</a>!=NULL)
+<a name="l00059"></a>00059                                 {
+<a name="l00060"></a>00060                                 pomocniczy=pomocniczy-&gt;<a class="code" href="classelement.html#ab6df52b0e5cfa7c4998a2ab74a8ef53e">nastepny</a>;
+<a name="l00061"></a>00061                                 }
+<a name="l00062"></a>00062                         <span class="keywordflow">else</span> <span class="keywordflow">break</span>;
+<a name="l00063"></a>00063                 }
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065                 pomocniczy-&gt;<a class="code" href="classelement.html#ab6df52b0e5cfa7c4998a2ab74a8ef53e">nastepny</a>=nastepny;
+<a name="l00066"></a>00066                 nastepny-&gt;<a class="code" href="classelement.html#ab8931aa65d177c803287d93e49b14db9">zajety</a>=<span class="keyword">true</span>;
+<a name="l00067"></a>00067         }
+<a name="l00068"></a>00068         ilosc+=1;
+<a name="l00069"></a>00069 }
+<a name="l00070"></a>00070 
+<a name="l00077"></a><a class="code" href="classtablica.html#aba0c7914bf7f4935dff1216c7808dc5d">00077</a> <span class="keywordtype">void</span> <a class="code" href="classtablica.html#a00673bf5554a4e7d8ce138bbb3b551ec" title="funkcja przetwarza klucz elementu na nr indeksu w tablicy">tablica::haszuj</a>(<a class="code" href="classelement.html">element</a> &amp;nowy)
+<a name="l00078"></a>00078 {
+<a name="l00079"></a>00079         <span class="keywordtype">int</span> dlug=nowy.<a class="code" href="classelement.html#ae428dec26f3fcde9f8990b904a144e37">klucz</a>.size();
+<a name="l00080"></a>00080         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;dlug;i++)
+<a name="l00081"></a>00081         {
+<a name="l00082"></a>00082                 nowy.<a class="code" href="classelement.html#a0f38e724925a63611881cd67947d7878">indeks</a>=(int)nowy.<a class="code" href="classelement.html#ae428dec26f3fcde9f8990b904a144e37">klucz</a>[i]*(i+1)%(rozmiar);
+<a name="l00083"></a>00083         }
+<a name="l00084"></a>00084 }
+<a name="l00091"></a><a class="code" href="classtablica.html#a00673bf5554a4e7d8ce138bbb3b551ec">00091</a> <span class="keywordtype">int</span> <a class="code" href="classtablica.html#a00673bf5554a4e7d8ce138bbb3b551ec" title="funkcja przetwarza klucz elementu na nr indeksu w tablicy">tablica::haszuj</a>(<span class="keywordtype">string</span> klucz)
+<a name="l00092"></a>00092         {
+<a name="l00093"></a>00093                 <span class="keywordtype">int</span> indeks;
+<a name="l00094"></a>00094                 <span class="keywordtype">int</span> dlug=klucz.size();
+<a name="l00095"></a>00095                 <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;dlug;i++)
+<a name="l00096"></a>00096                 {
+<a name="l00097"></a>00097                         indeks=(int)klucz[i]*(i+1)%(rozmiar);
+<a name="l00098"></a>00098                 }
+<a name="l00099"></a>00099         <span class="keywordflow">return</span> indeks;
+<a name="l00100"></a>00100         }
+<a name="l00101"></a>00101 
+<a name="l00107"></a><a class="code" href="classtablica.html#a015cd823648a0a950947cfd64db55a0f">00107</a> <a class="code" href="classelement.html">element</a> * <a class="code" href="classtablica.html#a015cd823648a0a950947cfd64db55a0f" title="funkcja znajduje element o zadanym kluczu">tablica::znajdz</a>(<span class="keywordtype">string</span> klucz)
+<a name="l00108"></a>00108 {
+<a name="l00109"></a>00109         <a class="code" href="classelement.html">element</a> *pomocniczy;
+<a name="l00110"></a>00110         <span class="keywordtype">int</span> indeks;
+<a name="l00111"></a>00111         indeks=haszuj(klucz);
+<a name="l00112"></a>00112         pomocniczy=&amp;poczatek[indeks];
+<a name="l00113"></a>00113         <span class="keywordflow">if</span>(pomocniczy-&gt;<a class="code" href="classelement.html#ab8931aa65d177c803287d93e49b14db9">zajety</a>==<span class="keyword">true</span>)
+<a name="l00114"></a>00114         {
+<a name="l00115"></a>00115         <span class="keywordflow">if</span>(pomocniczy-&gt;<a class="code" href="classelement.html#ae428dec26f3fcde9f8990b904a144e37">klucz</a>==klucz)<span class="keywordflow">return</span> pomocniczy;
+<a name="l00116"></a>00116         <span class="keywordflow">while</span>(pomocniczy-&gt;<a class="code" href="classelement.html#ab6df52b0e5cfa7c4998a2ab74a8ef53e">nastepny</a>!=NULL)
+<a name="l00117"></a>00117         {
+<a name="l00118"></a>00118                 pomocniczy=pomocniczy-&gt;<a class="code" href="classelement.html#ab6df52b0e5cfa7c4998a2ab74a8ef53e">nastepny</a>;
+<a name="l00119"></a>00119                 <span class="keywordflow">if</span>(pomocniczy-&gt;<a class="code" href="classelement.html#ae428dec26f3fcde9f8990b904a144e37">klucz</a>==klucz)<span class="keywordflow">return</span> pomocniczy;
+<a name="l00120"></a>00120         }
+<a name="l00121"></a>00121         }
+<a name="l00122"></a>00122 }
+<a name="l00123"></a>00123 
+<a name="l00128"></a><a class="code" href="classtablica.html#a7988edfccea999edb4ae9fcfd17b3b36">00128</a> <span class="keywordtype">void</span> <a class="code" href="classtablica.html#a7988edfccea999edb4ae9fcfd17b3b36" title="funkcja usuwa element o podanym kluczu">tablica::usun_element</a>(<span class="keywordtype">string</span> klucz)
+<a name="l00129"></a>00129 {
+<a name="l00130"></a>00130         <a class="code" href="classelement.html">element</a> *nastepny;
+<a name="l00131"></a>00131         <a class="code" href="classelement.html">element</a> * pomocniczy=znajdz(klucz);
+<a name="l00132"></a>00132         <span class="keywordflow">if</span>(pomocniczy-&gt;<a class="code" href="classelement.html#ab6df52b0e5cfa7c4998a2ab74a8ef53e">nastepny</a>==NULL)pomocniczy-&gt;<a class="code" href="classelement.html#a51895177f9783b3293f5027c0d307e13" title="zeruje wartosci elementu">czysc</a>();
+<a name="l00133"></a>00133         <span class="keywordflow">else</span>
+<a name="l00134"></a>00134         {
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136         nastepny=pomocniczy-&gt;<a class="code" href="classelement.html#ab6df52b0e5cfa7c4998a2ab74a8ef53e">nastepny</a>;
+<a name="l00137"></a>00137         *pomocniczy=*pomocniczy-&gt;<a class="code" href="classelement.html#ab6df52b0e5cfa7c4998a2ab74a8ef53e">nastepny</a>;
+<a name="l00138"></a>00138         <span class="keyword">delete</span> nastepny;
+<a name="l00139"></a>00139         }
+<a name="l00140"></a>00140         ilosc-=1;
+<a name="l00141"></a>00141 
+<a name="l00142"></a>00142 }
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="tablica_8cpp.html">tablica.cpp</a>      </li>
+
+    <li class="footer">Wygenerowano Wed Apr 23 2014 22:41:14 dla tablica_haszujaca programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

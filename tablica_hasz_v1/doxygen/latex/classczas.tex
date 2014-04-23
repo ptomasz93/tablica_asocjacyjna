@@ -1,0 +1,140 @@
+\section{\-Dokumentacja klasy czas}
+\label{classczas}\index{czas@{czas}}
+
+
+{\ttfamily \#include $<$stoper.\-hh$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf start} ()
+\begin{DoxyCompactList}\small\item\em start pomiaru zapisuje stan zegara \end{DoxyCompactList}\item 
+void {\bf stop} ()
+\begin{DoxyCompactList}\small\item\em koniec pomiaru zapisuje stan zegara \end{DoxyCompactList}\item 
+double {\bf wynik} ()
+\begin{DoxyCompactList}\small\item\em zwraca wynik pomiaru \end{DoxyCompactList}\item 
+void {\bf zapisz} (fstream \&{\bf wynik}, int rozmiar)
+\begin{DoxyCompactList}\small\item\em zapisuje wynik do pliku \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+double {\bf time}
+\item 
+clock\-\_\-t {\bf poczatek}
+\item 
+clock\-\_\-t {\bf koniec}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 19 pliku stoper.\-hh.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\index{czas@{czas}!start@{start}}
+\index{start@{start}!czas@{czas}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf czas\-::start} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [inline]}}\label{classczas_a1e4c793526806f459e7f5c8c4a3ae29f}
+
+
+\-Definicja w linii 30 pliku stoper.\-hh.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\index{czas@{czas}!stop@{stop}}
+\index{stop@{stop}!czas@{czas}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf czas\-::stop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [inline]}}\label{classczas_a27f391e3c6bfb1f15f97c61bf403eb2d}
+
+
+\-Definicja w linii 38 pliku stoper.\-hh.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\index{czas@{czas}!wynik@{wynik}}
+\index{wynik@{wynik}!czas@{czas}}
+\subsubsection[{wynik}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf czas\-::wynik} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [inline]}}\label{classczas_a253df7797ca3cc3447d24c3c9477768e}
+\begin{DoxyReturn}{\-Zwraca}
+zwraca czas dzialania 
+\end{DoxyReturn}
+
+
+\-Definicja w linii 46 pliku stoper.\-hh.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\index{czas@{czas}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!czas@{czas}}
+\subsubsection[{zapisz}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf czas\-::zapisz} (
+\begin{DoxyParamCaption}
+\item[{fstream \&}]{wynik, }
+\item[{int}]{rozmiar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [inline]}}\label{classczas_a53e5d67a7dd77239f2ef6ae0866e0596}
+
+\begin{DoxyParams}{\-Parametry}
+{\em wynik} & pomiaru \\
+\hline
+{\em rozmiar} & rozmiar problemu \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 56 pliku stoper.\-hh.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\index{czas@{czas}!koniec@{koniec}}
+\index{koniec@{koniec}!czas@{czas}}
+\subsubsection[{koniec}]{\setlength{\rightskip}{0pt plus 5cm}clock\-\_\-t {\bf czas\-::koniec}\hspace{0.3cm}{\ttfamily  [private]}}\label{classczas_a65324dff284c101f2594b0b05b30399e}
+
+
+\-Definicja w linii 24 pliku stoper.\-hh.
+
+\index{czas@{czas}!poczatek@{poczatek}}
+\index{poczatek@{poczatek}!czas@{czas}}
+\subsubsection[{poczatek}]{\setlength{\rightskip}{0pt plus 5cm}clock\-\_\-t {\bf czas\-::poczatek}\hspace{0.3cm}{\ttfamily  [private]}}\label{classczas_a3e75d47bf9beee497b56997b0b7be45c}
+
+
+\-Definicja w linii 24 pliku stoper.\-hh.
+
+\index{czas@{czas}!time@{time}}
+\index{time@{time}!czas@{czas}}
+\subsubsection[{time}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf czas\-::time}\hspace{0.3cm}{\ttfamily  [private]}}\label{classczas_a1348fd4948270410b3087bb0318bd147}
+
+
+\-Definicja w linii 23 pliku stoper.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z pliku\-:\begin{DoxyCompactItemize}
+\item 
+prj/{\bf stoper.\-hh}\end{DoxyCompactItemize}

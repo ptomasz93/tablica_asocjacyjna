@@ -1,0 +1,168 @@
+\section{\-Dokumentacja klasy element}
+\label{classelement}\index{element@{element}}
+
+
+{\ttfamily \#include $<$element.\-hh$>$}
+
+
+
+\-Diagram współpracy dla element\-:
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+{\bf element} ()
+\item 
+void {\bf czysc} ()
+\begin{DoxyCompactList}\small\item\em zeruje wartosci elementu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+string {\bf klucz}
+\item 
+{\bf element} $\ast$ {\bf nastepny}
+\item 
+{\bf element} $\ast$ {\bf poprzedni}
+\item 
+int {\bf indeks}
+\item 
+bool {\bf zajety}
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+string {\bf wartosc}
+\end{DoxyCompactItemize}
+\subsection*{\-Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf tablica}
+\item 
+ostream \& {\bf operator$<$$<$} (ostream \&wejsciowe, {\bf element} \&wysylany)
+\item 
+istream \& {\bf operator$>$$>$} (istream \&wyjscie, {\bf element} \&wpisywany)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 21 pliku element.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\index{element@{element}!element@{element}}
+\index{element@{element}!element@{element}}
+\subsubsection[{element}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element\-::element} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [inline]}}\label{classelement_ab855762fbfbeb7307a78943b10c3afbb}
+
+
+\-Definicja w linii 32 pliku element.\-hh.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\index{element@{element}!czysc@{czysc}}
+\index{czysc@{czysc}!element@{element}}
+\subsubsection[{czysc}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf element\-::czysc} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classelement_a51895177f9783b3293f5027c0d307e13}
+
+
+\-Definicja w linii 39 pliku element.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+
+
+\subsection{\-Dokumentacja przyjaciół i funkcji związanych}
+\index{element@{element}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!element@{element}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{wejsciowe, }
+\item[{{\bf element} \&}]{wysylany}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [friend]}}\label{classelement_a18faca84496a1f18059b4836e95a040e}
+
+
+\-Definicja w linii 14 pliku element.\-cpp.
+
+\index{element@{element}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!element@{element}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{wyjscie, }
+\item[{{\bf element} \&}]{wpisywany}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [friend]}}\label{classelement_aafa0c73c3c8b2fab3730b59d63874673}
+
+
+\-Definicja w linii 24 pliku element.\-cpp.
+
+\index{element@{element}!tablica@{tablica}}
+\index{tablica@{tablica}!element@{element}}
+\subsubsection[{tablica}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf tablica}\hspace{0.3cm}{\ttfamily  [friend]}}\label{classelement_a3b1ec681cb76e91451ed2fc7b69f1af9}
+
+
+\-Definicja w linii 38 pliku element.\-hh.
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\index{element@{element}!indeks@{indeks}}
+\index{indeks@{indeks}!element@{element}}
+\subsubsection[{indeks}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf element\-::indeks}}\label{classelement_a0f38e724925a63611881cd67947d7878}
+
+
+\-Definicja w linii 30 pliku element.\-hh.
+
+\index{element@{element}!klucz@{klucz}}
+\index{klucz@{klucz}!element@{element}}
+\subsubsection[{klucz}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf element\-::klucz}}\label{classelement_ae428dec26f3fcde9f8990b904a144e37}
+
+
+\-Definicja w linii 27 pliku element.\-hh.
+
+\index{element@{element}!nastepny@{nastepny}}
+\index{nastepny@{nastepny}!element@{element}}
+\subsubsection[{nastepny}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element}$\ast$ {\bf element\-::nastepny}}\label{classelement_ab6df52b0e5cfa7c4998a2ab74a8ef53e}
+
+
+\-Definicja w linii 28 pliku element.\-hh.
+
+\index{element@{element}!poprzedni@{poprzedni}}
+\index{poprzedni@{poprzedni}!element@{element}}
+\subsubsection[{poprzedni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element}$\ast$ {\bf element\-::poprzedni}}\label{classelement_ab29a484726350416708a843bc30aa4fa}
+
+
+\-Definicja w linii 29 pliku element.\-hh.
+
+\index{element@{element}!wartosc@{wartosc}}
+\index{wartosc@{wartosc}!element@{element}}
+\subsubsection[{wartosc}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf element\-::wartosc}\hspace{0.3cm}{\ttfamily  [private]}}\label{classelement_ae33073625c349adb76caf9b5e0df0134}
+
+
+\-Definicja w linii 24 pliku element.\-hh.
+
+\index{element@{element}!zajety@{zajety}}
+\index{zajety@{zajety}!element@{element}}
+\subsubsection[{zajety}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf element\-::zajety}}\label{classelement_ab8931aa65d177c803287d93e49b14db9}
+
+
+\-Definicja w linii 31 pliku element.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+prj/{\bf element.\-hh}\item 
+prj/{\bf element.\-cpp}\end{DoxyCompactItemize}
