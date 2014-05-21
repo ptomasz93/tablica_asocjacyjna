@@ -64,7 +64,7 @@ il[mln] & czas drzewo [s] & haszujaca& vector \\
 125.000000 &  0.42&  0.17&0.5\\
 130.000000 &  0.46&  0.19&0.18\\
 135.000000 &  0.48& 0.18&0.47\\
-140.000000 &  0.28&  0.13&0.46\\
+140.000000 & 0.28&  0.13&0.46\\
 145.000000 &  0.22& 0.17&0.36\\
 150.000000 &  0.28&  0.13&0.36\\
 \hline
@@ -79,7 +79,7 @@ il[mln] & czas drzewo [s] & haszujaca& vector \\
 \begin{figure}
 Na podstawie wykresu można stwierdzić że tablica asocjacyjna zaimplementowana na tablicy haszujacej jest najkorzystniejsza ponieważ czas dostępu do elementu w przybliżeniu jest liniowy. 
 W przypadku talbiy asocjacyjnej zaimplementowanej na drzewie binarnym oraz na vektorze sortowanym i przeszukiwanym binarnie czas dostepu do szukanego elementu jest podobny. 
-Z tabeli można wywnioskować że w przypadku vectora oraz drzewa binarnego czas wyszukiwania zależny jest nie tylko od ilości elementów oraz również od wartości klucza to znaczy od położenie poszukiwanego elementu w całej tablicy, co widoczne jest na wykresie, dla wartości powyżej 130 tysiecy.
+Z tabeli można wywnioskować że w przypadku vectora oraz drzewa binarnego czas wyszukiwania zależny jest nie tylko od ilości elementów oraz również od wartości klucza to znaczy od położenie poszukiwanego elementu w całej tablicy. 
 \end{figure}
 
 \end{document}
