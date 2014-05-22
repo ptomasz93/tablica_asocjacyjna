@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.4.23)  23 APR 2014 23:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.5.11)  22 MAY 2014 11:19
 entering extended mode
  %&-line parsing enabled.
 **sprawodzdanie.tex
 (./sprawodzdanie.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, polish, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size11.clo
@@ -259,18 +259,13 @@ File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
-
-Package babel Warning: No hyphenation patterns were loaded for
-(babel)                the language `Polish'
-(babel)                I will use the patterns loaded for \language=0 instead.
-
-\l@polish = a dialect from \language0
 Package babel Info: Making " an active character on input line 83.
 \pl@left=\dimen104
 \pl@down=\dimen105
 \pl@right=\dimen106
 \pl@temp=\dimen107
-)) (/usr/share/texmf/tex/latex/lm/lmodern.sty
+))
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -400,25 +395,44 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 37.
 
 
-LaTeX Warning: Float too large for page by 107.62798pt on input line 78.
+LaTeX Warning: Float too large for page by 107.62798pt on input line 80.
 
-[1] [2 <./czas_dzialania_algorytmow.png (PNG copy)>] [3] (./sprawodzdanie.aux) 
-) 
+<./czas_dzialania_algorytmow2.png, id=8, 642.4pt x 481.8pt>
+File: ./czas_dzialania_algorytmow2.png Graphic file (type png)
+
+<use ./czas_dzialania_algorytmow2.png>
+
+LaTeX Warning: Float too large for page by 95.02797pt on input line 125.
+
+<./czas_dzialania_algorytmow3.png, id=9, 642.4pt x 481.8pt>
+File: ./czas_dzialania_algorytmow3.png Graphic file (type png)
+
+<use ./czas_dzialania_algorytmow3.png>
+
+LaTeX Warning: Float too large for page by 95.02797pt on input line 167.
+
+[1] [2 <./czas_dzialania_algorytmow.png (PNG copy)>] [3 <./czas_dzialania_algor
+ytmow2.png (PNG copy)>] [4 <./czas_dzialania_algorytmow3.png (PNG copy)>]
+[5] (./sprawodzdanie.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1843 strings out of 495061
- 21941 string characters out of 1182621
- 80973 words of memory out of 3000000
- 5011 multiletter control sequences out of 15000+50000
+ 1852 strings out of 495026
+ 22287 string characters out of 1181802
+ 100997 words of memory out of 3000000
+ 5021 multiletter control sequences out of 15000+50000
  34336 words of font info for 34 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 25i,7n,24p,319b,258s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/p
-ublic/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmr17.pfb>
-Output written on sprawodzdanie.pdf (4 pages, 120823 bytes).
+ 48 hyphenation exceptions out of 8191
+ 25i,7n,24p,428b,258s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
+public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmr17.pfb>
+Output written on sprawodzdanie.pdf (6 pages, 145223 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 44 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
